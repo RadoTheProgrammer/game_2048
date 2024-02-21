@@ -7,3 +7,5 @@
 /pygame_2048.egg-info
 *.bat
 *.ai
+/.venv/
+__pycache__
