@@ -32,7 +32,8 @@ def get_desktop():
         desktop = winreg.QueryValueEx(key, "Desktop")[0] + r'\game_2048\screenshot'
     elif platform.system().lower() == 'darwin':
         desktop = os.path.expanduser('~/Desktop/game_2048/screenshot')
-    
+    elif platform.system().lower() == 'linux':
+        desktop = os.path.expanduser('~/Desktop/game_2048/screenshot')
     return desktop
 
 def output():
